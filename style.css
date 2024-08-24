@@ -101,7 +101,7 @@ header .authentication .button-assinar-agora a:hover {
 
 main .main-section {
   display: grid;
-  grid-template-columns: 560px 1fr;
+  grid-template-columns: 680px 1fr;
   align-items: flex-start;
   justify-content: center;
   gap: 2rem;
@@ -168,7 +168,7 @@ main .main-section .column-right img {
 main .cards {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 26px;
 }
 
 main .cards .card-info {
@@ -196,7 +196,6 @@ main .cards .card-info .info-course {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* gap: 4px; */
 }
 main .cards .card-info .info-course p {
   font-size: 14px;
@@ -210,4 +209,71 @@ main .cards .card-info .info-course p:last-child {
 main .cards .card-info .info-course i {
   font-size: 16px;
   font-weight: 600;
+}
+
+main .courses {
+  margin-top: 4rem;
+
+  display: grid;
+  grid-template-columns: 588px 1fr;
+}
+
+main .courses .column-left h2 {
+  margin-bottom: 1.5rem;
+}
+
+main .courses .column-left .content-course p:first-child {
+  width: 440px;
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  margin-bottom: 1rem;
+}
+
+main .courses .column-left .content-course p:last-child {
+  width: 420px;
+
+  font-size: 1.25rem;
+  line-height: 32px;
+
+  margin-bottom: 2rem;
+}
+
+main .courses .column-left .content-course p span {
+  color: var(--purple-400);
+}
+
+main .courses .column-left .view-catalog-button a {
+  border: 2px solid var(--purple-400);
+  border-radius: 4px;
+
+  width: 204px;
+  height: 52px;
+
+  padding: 0 1rem;
+
+  text-decoration: none;
+
+  color: var(--purple-400);
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+main .courses .column-left .view-catalog-button a i {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+main .courses .column-left .view-catalog-button a:hover {
+  background-color: var(--purple-400);
+  color: var(--white);
+}
+
+main .courses .column-right img {
+  height: 400px;
 }
