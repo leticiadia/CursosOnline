@@ -164,3 +164,50 @@ main .main-section .column-left .buttons a {
 main .main-section .column-right img {
   height: 400px;
 }
+
+main .cards {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+main .cards .card-info {
+  border: 3px solid var(--purple-400);
+  border-radius: 4px;
+
+  width: 248px;
+  height: 77px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  color: var(--gray-700);
+
+  padding: 0 8px;
+}
+
+main .cards .card-info i:nth-child(1) {
+  font-size: 54px;
+}
+
+main .cards .card-info .info-course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 4px; */
+}
+main .cards .card-info .info-course p {
+  font-size: 14px;
+}
+
+main .cards .card-info .info-course p:last-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main .cards .card-info .info-course i {
+  font-size: 16px;
+  font-weight: 600;
+}
