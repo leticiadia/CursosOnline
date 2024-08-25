@@ -7,6 +7,8 @@
 
   --purple-400: #818cf8;
   --purple-300: #a5b4fc;
+
+  --green-300: #a1e8af;
 }
 
 * {
@@ -350,4 +352,99 @@ main .teachers .column-left .view-teachers-button a:hover {
 
 main .teachers .column-right img {
   height: 432px;
+}
+
+main .blog {
+  margin-top: 3rem;
+}
+
+main .blog p {
+  font-size: 1.25rem;
+  width: 480px;
+
+  margin-top: 1rem;
+}
+
+main .blog .articles {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+main .blog .card-article {
+  margin-top: 2rem;
+  max-width: 400px;
+}
+
+main .blog .card-article .header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main .blog .card-article .header img {
+  margin-left: -16px;
+  height: 220px;
+}
+
+main .blog .card-article .header span {
+  width: 116px;
+  height: 24px;
+  background-color: var(--green-300);
+  border-radius: 4px;
+
+  font-weight: 600;
+  text-align: center;
+}
+
+main .blog .card-article .content-article {
+  margin-top: 1rem;
+  color: var(--gray-700);
+}
+
+main .blog .card-article .content-article h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 280px;
+}
+
+main .blog .card-article .content-article p:nth-child(2) {
+  width: 380px;
+  line-height: 32px;
+  min-height: 240px;
+}
+
+main .blog .card-article .content-article p:last-child {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+main .blog .view-all-articles a {
+  margin-top: 2rem;
+
+  text-decoration: none;
+
+  border: 2px solid var(--purple-400);
+  border-radius: 4px;
+
+  width: 264px;
+  height: 52px;
+  padding: 8px 16px;
+
+  color: var(--purple-400);
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  font-size: 1.25rem;
+}
+
+main .blog .view-all-articles a i {
+  font-size: 1.5rem;
+}
+
+main .blog .view-all-articles a:hover {
+  background-color: var(--purple-400);
+  color: var(--white);
 }
