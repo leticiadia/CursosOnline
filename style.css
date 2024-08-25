@@ -448,3 +448,74 @@ main .blog .view-all-articles a:hover {
   background-color: var(--purple-400);
   color: var(--white);
 }
+
+main .student-testimonials {
+  margin-top: 3rem;
+}
+
+main .student-testimonials p {
+  width: 540px;
+  margin-top: 1rem;
+
+  font-size: 1.25rem;
+  line-height: 32px;
+}
+
+main .student-testimonials .students {
+  margin-top: 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+main .student-testimonials .students .card-student {
+  border: 3px solid var(--purple-400);
+  border-radius: 4px;
+
+  width: 350px;
+  height: 326px;
+
+  padding: 32px 28px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+main .student-testimonials .students .card-student p {
+  width: 280px;
+  color: var(--gray-700);
+  font-weight: 500;
+}
+
+main .student-testimonials .students .card-student .info-student {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin: 0 auto;
+}
+
+main .student-testimonials .students .card-student .info-student img {
+  border: 3px solid var(--black);
+  border-radius: 100%;
+}
+
+main .student-testimonials .students .card-student .info-student .student {
+  margin-top: -12px;
+}
+
+main .student-testimonials .students .card-student .info-student .student p {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+main .student-testimonials .students .card-student .info-student .student span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-700);
+}
