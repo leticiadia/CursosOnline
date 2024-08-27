@@ -24,20 +24,18 @@ body {
   font-size: 1rem;
 
   color: var(--black-);
-
-  display: grid;
-  align-items: center;
-  justify-content: center;
 }
 
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
-  gap: 2.5rem;
+  margin: 2rem 0;
+}
 
-  padding: 2rem 0;
+header .logo img {
+  height: 1.5rem;
 }
 
 header .options ul {
@@ -48,25 +46,31 @@ header .options ul {
   gap: 1rem;
 }
 
-header .options ul li a {
+header .options ul li a,
+header .authentication .login_button a {
   text-decoration: none;
+
   font-size: 1rem;
-  color: var(--black-);
+  color: var(--black);
 
   position: relative;
 }
 
-header .options ul li a::after {
+header .options ul li a::after,
+header .authentication .login_button a::after {
   content: "";
   width: 0;
   height: 2px;
-  background-color: var(--purple-400);
-  position: absolute;
   left: 0;
   bottom: -4px;
+
+  background-color: var(--purple-400);
+
+  position: absolute;
 }
 
-header .options ul li a:hover::after {
+header .options ul li a:hover::after,
+header .authentication .login_button a:hover::after {
   width: 100%;
   transition: width 300ms ease-in-out;
 }
@@ -74,506 +78,37 @@ header .options ul li a:hover::after {
 header .authentication {
   display: flex;
   align-items: center;
-  gap: 1rem;
-}
-
-header .authentication a {
-  text-decoration: none;
-  color: var(--black-);
-}
-
-header .authentication .button-assinar-agora {
-  border: 3px solid var(--purple-400);
-  border-radius: 4px;
-  padding: 8px 16px;
-}
-
-header .authentication .button-assinar-agora a {
-  color: var(--purple-400);
-  display: flex;
-  align-items: center;
-  gap: 2px;
-}
-
-header .authentication .button-assinar-agora:hover {
-  background-color: var(--purple-400);
-}
-
-header .authentication .button-assinar-agora a:hover {
-  color: var(--white);
-  transition: 400ms ease-out;
-}
-
-main {
-  /* min-height: 80vh;
-  display: grid; */
-
-  /* min-height: 80vh;
-  display: grid;
-  grid-template-rows: 480px 100px 480px 480px;
-  gap: 64px; */
-}
-
-main .main-section {
-  display: grid;
-  grid-template-columns: 680px 1fr;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 2rem;
-
-  padding: 2rem 0;
-}
-
-main .main-section .column-left p {
-  width: 480px;
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-main .main-section .column-left span {
-  font-size: 2.5rem;
-  font-weight: bold;
-
-  color: var(--purple-400);
-}
-
-main .main-section .column-left .buttons {
-  display: flex;
-  gap: 1.5rem;
-
-  padding: 1rem 0;
-}
-
-main .main-section .column-left .buttons a:nth-child(1) {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--black);
-
-  padding: 12px 24px;
-  border-radius: 100px;
-  background-color: var(--purple-400);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-}
-
-main .main-section .column-left .buttons a:nth-child(1) i {
-  font-size: 18px;
-}
-
-main .main-section .column-left .buttons a {
-  text-decoration: none;
-
-  display: flex;
-  align-items: center;
-  gap: 4px;
-
-  font-size: 18px;
-  color: var(--purple-400);
-  font-weight: 600;
-}
-
-main .main-section .column-right img {
-  height: 400px;
-}
-
-main .cards {
-  display: flex;
-  align-items: center;
-  gap: 26px;
-}
-
-main .cards .card-info {
-  border: 3px solid var(--purple-400);
-  border-radius: 4px;
-
-  width: 248px;
-  height: 77px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-
-  color: var(--gray-700);
-
-  padding: 0 8px;
-}
-
-main .cards .card-info i:nth-child(1) {
-  font-size: 54px;
-}
-
-main .cards .card-info .info-course {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-main .cards .card-info .info-course p {
-  font-size: 14px;
-}
-
-main .cards .card-info .info-course p:last-child {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-main .cards .card-info .info-course i {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-main .courses {
-  margin-top: 4rem;
-
-  display: grid;
-  grid-template-columns: 588px 1fr;
-}
-
-main .courses .column-left h2 {
-  margin-bottom: 1.5rem;
-}
-
-main .courses .column-left .content-course p:first-child {
-  width: 440px;
-  font-size: 2.5rem;
-  font-weight: bold;
-
-  margin-bottom: 1rem;
-}
-
-main .courses .column-left .content-course p:last-child {
-  width: 420px;
-
-  font-size: 1.25rem;
-  line-height: 32px;
-
-  margin-bottom: 2rem;
-}
-
-main .courses .column-left .content-course p span {
-  color: var(--purple-400);
-}
-
-main .courses .column-left .view-catalog-button a {
-  border: 2px solid var(--purple-400);
-  border-radius: 4px;
-
-  width: 204px;
-  height: 52px;
-
-  padding: 0 1rem;
-
-  text-decoration: none;
-
-  color: var(--purple-400);
-
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-
-main .courses .column-left .view-catalog-button a i {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-main .courses .column-left .view-catalog-button a:hover {
-  background-color: var(--purple-400);
-  color: var(--white);
-}
-
-main .courses .column-right img {
-  height: 400px;
-}
-
-main .teachers {
-  height: 600px;
-  background-color: var(--purple-300);
-
-  display: grid;
-  grid-template-columns: 400px 1fr;
-  align-items: center;
-  gap: 64px;
-
-  margin-top: 3rem;
-}
-
-main .teachers .column-left {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-
-  padding-left: 2rem;
-}
-
-main .teachers .column-left h2 {
-  font-size: 36px;
-  font-weight: 600;
-}
-
-main .teachers .column-left .content-teachers p {
-  font-size: 1.25rem;
-
-  margin-top: 0.875rem;
-}
-
-main .teachers .column-left .view-teachers-button a {
-  text-decoration: none;
-  border: 2px solid var(--black);
-  border-radius: 4px;
-
-  padding: 8px 16px;
-
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  width: 218px;
-
-  font-size: 1.25rem;
-  color: var(--black);
-
-  margin-top: 1rem;
-}
-
-main .teachers .column-left .view-teachers-button a i {
-  font-size: 1.5rem;
-}
-
-main .teachers .column-left .view-teachers-button a:hover {
-  background-color: var(--black);
-  color: var(--white);
-}
-
-main .teachers .column-right img {
-  height: 432px;
-}
-
-main .blog {
-  margin-top: 3rem;
-}
-
-main .blog p {
-  font-size: 1.25rem;
-  width: 480px;
-
-  margin-top: 1rem;
-}
-
-main .blog .articles {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-main .blog .card-article {
-  margin-top: 2rem;
-  max-width: 400px;
-}
-
-main .blog .card-article .header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-main .blog .card-article .header img {
-  margin-left: -16px;
-  height: 220px;
-}
-
-main .blog .card-article .header span {
-  width: 116px;
-  height: 24px;
-  background-color: var(--green-300);
-  border-radius: 4px;
-
-  font-weight: 600;
-  text-align: center;
-}
-
-main .blog .card-article .content-article {
-  margin-top: 1rem;
-  color: var(--gray-700);
-}
-
-main .blog .card-article .content-article h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  width: 280px;
-}
-
-main .blog .card-article .content-article p:nth-child(2) {
-  width: 380px;
-  line-height: 32px;
-  min-height: 240px;
-}
-
-main .blog .card-article .content-article p:last-child {
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-}
-
-main .blog .view-all-articles a {
-  margin-top: 2rem;
-
-  text-decoration: none;
-
-  border: 2px solid var(--purple-400);
-  border-radius: 4px;
-
-  width: 264px;
-  height: 52px;
-  padding: 8px 16px;
-
-  color: var(--purple-400);
-
-  display: flex;
-  align-items: center;
-  gap: 4px;
-
-  font-size: 1.25rem;
-}
-
-main .blog .view-all-articles a i {
-  font-size: 1.5rem;
-}
-
-main .blog .view-all-articles a:hover {
-  background-color: var(--purple-400);
-  color: var(--white);
-}
-
-main .student-testimonials {
-  margin-top: 3rem;
-}
-
-main .student-testimonials p {
-  width: 540px;
-  margin-top: 1rem;
-
-  font-size: 1.25rem;
-  line-height: 32px;
-}
-
-main .student-testimonials .students {
-  margin-top: 2rem;
-
-  display: flex;
-  align-items: center;
-  gap: 64px;
-}
-
-main .student-testimonials .students .card-student {
-  border: 3px solid var(--purple-400);
-  border-radius: 4px;
-
-  width: 350px;
-  height: 326px;
-
-  padding: 32px 28px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 16px;
 }
 
-main .student-testimonials .students .card-student p {
-  width: 280px;
-  color: var(--gray-700);
+header .authentication .get_started_button a {
+  text-decoration: none;
+
+  border: 3px solid var(--purple-400);
+  border-radius: 4px;
+
+  width: 172px;
+  height: 48px;
+
+  padding: 12px 16px;
+
+  color: var(--purple-400);
+
+  display: flex;
+  align-items: center;
+
+  font-size: 1rem;
   font-weight: 500;
 }
 
-main .student-testimonials .students .card-student .info-student {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-
-  margin: 0 auto;
-}
-
-main .student-testimonials .students .card-student .info-student img {
-  border: 3px solid var(--black);
-  border-radius: 100%;
-}
-
-main .student-testimonials .students .card-student .info-student .student {
-  margin-top: -12px;
-}
-
-main .student-testimonials .students .card-student .info-student .student p {
-  color: var(--black);
-  font-weight: bold;
-  font-size: 16px;
-}
-
-main .student-testimonials .students .card-student .info-student .student span {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--gray-700);
-}
-
-footer {
-  margin-top: 3rem;
-
-  height: 440px;
-  background-color: var(--purple-400);
-
-  display: grid;
-  grid-template-columns: 720px 1fr;
-  align-items: center;
-  justify-content: center;
-
-  padding: 0 32px;
-}
-
-footer .column-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  gap: 140px;
-}
-
-footer .column-left p {
+header .authentication .get_started_button a i {
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 
-footer .column-right {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
+header .authentication .get_started_button a:hover {
+  background-color: var(--purple-400);
+  color: var(--white);
 
-footer .column-right .map,
-footer .column-right .links {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-footer .column-right .map p,
-footer .column-right .links p {
-  color: var(--gray-900);
-}
-
-footer .column-right .map a,
-footer .column-right .links a {
-  text-decoration: none;
-  color: var(--black);
-  font-size: 18px;
-}
-
-footer .column-right .map a:hover {
-  color: var(--gray-900);
+  transition: 300ms ease-out;
 }
