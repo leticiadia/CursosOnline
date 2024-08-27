@@ -26,6 +26,20 @@ body {
   color: var(--black-);
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--purple-400);
+  border-radius: 20px;
+  border: 3px solid #f1f5f9;
+}
+
 .wrapper {
   display: grid;
   align-items: center;
