@@ -159,6 +159,7 @@ main .wrapper .main-section .column-left p span {
 
 main .wrapper .main-section .column-right img {
   height: 400px;
+  animation: up 1s ease-out;
 }
 
 main .wrapper .main-section .buttons {
@@ -321,6 +322,7 @@ main .wrapper .courses .column-left .view_catalog_button a:hover {
 
 main .wrapper .courses .column-right img {
   height: 320px;
+  animation: up 1s ease-out;
 }
 
 main .teachers {
@@ -339,7 +341,6 @@ main .teachers {
 main .teachers .column-left h2 {
   font-size: 2rem;
   font-weight: 600;
-
   margin-bottom: 1rem;
 }
 
@@ -383,6 +384,14 @@ main .teachers .column-left .view_teachers_button a:hover {
 
 main .teachers .column-right img {
   height: 380px;
+}
+
+main .teachers .column-right img:first-child {
+  animation: up 1s ease-out;
+}
+
+main .teachers .column-right img:last-child {
+  animation: up 2s ease-out;
 }
 
 main .wrapper .blog {
@@ -531,6 +540,8 @@ main .wrapper .student_testimonials .students .card_student .content_student p {
   color: var(--gray-700);
 
   min-height: 180px;
+
+  animation: up 1s ease-out;
 }
 
 main .wrapper .student_testimonials .students .card_student .info_student {
@@ -539,6 +550,8 @@ main .wrapper .student_testimonials .students .card_student .info_student {
   justify-content: center;
 
   gap: 8px;
+
+  animation: up 1s ease-out;
 }
 
 main .wrapper .student_testimonials .students .card_student .info_student img {
@@ -658,4 +671,15 @@ footer .column-right .links a:nth-child(4):hover::after {
 footer .column-right .links a:last-child:hover::after {
   width: 100%;
   transition: width 400ms ease-in-out;
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+  }
 }
