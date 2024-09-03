@@ -705,7 +705,7 @@ footer .column-right .links a:last-child:hover::after {
     overflow-x: hidden;
   }
   header {
-    gap: 182px;
+    gap: 176px;
     align-items: center;
   }
 
@@ -757,7 +757,8 @@ footer .column-right .links a:last-child:hover::after {
 
   main .wrapper .main-section .column-left p {
     font-size: 1.5rem;
-    width: 372px;
+    width: 368px;
+    text-align: center;
   }
 
   main .wrapper .main-section,
@@ -797,12 +798,12 @@ footer .column-right .links a:last-child:hover::after {
 
   main .wrapper .courses .column-left .content_course p:first-child {
     font-size: 1.5rem;
-    width: 372px;
+    width: 368px;
   }
 
   main .wrapper .courses .column-left .content_course p {
     font-size: 12px;
-    width: 240px;
+    width: 280px;
   }
 
   main .wrapper .courses .column-right img {
@@ -825,7 +826,7 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .teachers .column-left .content_teachers p {
-    width: 372px;
+    width: 368px;
   }
 
   main .teachers .column-right {
@@ -842,7 +843,11 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .wrapper .blog p {
-    width: 376px;
+    width: 368px;
+  }
+
+  main .wrapper .blog .articles .card_article .header img {
+    height: 237px;
   }
 
   main .wrapper .blog .articles .card_article .content_article p {
@@ -859,7 +864,7 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .wrapper .student_testimonials p {
-    width: 372px;
+    width: 368px;
   }
 
   main .wrapper .student_testimonials .students .card_student {
@@ -897,7 +902,7 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   footer .column-left {
-    margin-left: -68px;
+    margin-right: 140px;
   }
 
   footer .column-left img {
@@ -907,5 +912,6 @@ footer .column-right .links a:last-child:hover::after {
 
   footer .column-right {
     margin-right: 0;
+    gap: 90px;
   }
 }
