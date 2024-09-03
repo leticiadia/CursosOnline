@@ -699,8 +699,13 @@ footer .column-right .links a:last-child:hover::after {
 }
 
 @media screen and (max-width: 800px) {
+  html,
+  body,
+  main {
+    overflow-x: hidden;
+  }
   header {
-    gap: 108px;
+    gap: 182px;
     align-items: center;
   }
 
@@ -752,7 +757,7 @@ footer .column-right .links a:last-child:hover::after {
 
   main .wrapper .main-section .column-left p {
     font-size: 1.5rem;
-    width: 300px;
+    width: 372px;
   }
 
   main .wrapper .main-section,
@@ -782,7 +787,7 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .wrapper .blog .view_all_articles a {
-    width: 304px;
+    width: 377px;
     justify-content: center;
   }
 
@@ -792,7 +797,7 @@ footer .column-right .links a:last-child:hover::after {
 
   main .wrapper .courses .column-left .content_course p:first-child {
     font-size: 1.5rem;
-    width: 300px;
+    width: 372px;
   }
 
   main .wrapper .courses .column-left .content_course p {
@@ -801,7 +806,7 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .wrapper .courses .column-right img {
-    height: 246px;
+    height: 304px;
   }
 
   main .teachers {
@@ -820,7 +825,7 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .teachers .column-left .content_teachers p {
-    width: 300px;
+    width: 372px;
   }
 
   main .teachers .column-right {
@@ -829,7 +834,7 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .teachers .column-right img {
-    height: 400px;
+    height: 480px;
   }
 
   main .wrapper .blog {
@@ -837,7 +842,11 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .wrapper .blog p {
-    width: 304px;
+    width: 376px;
+  }
+
+  main .wrapper .blog .articles .card_article .content_article p {
+    width: 346px;
   }
 
   main .wrapper .student_testimonials .students {
@@ -846,11 +855,15 @@ footer .column-right .links a:last-child:hover::after {
 
   main .wrapper .student_testimonials h2 {
     font-size: 1.25rem;
-    width: 200px;
+    width: 280px;
   }
 
   main .wrapper .student_testimonials p {
-    width: 260px;
+    width: 372px;
+  }
+
+  main .wrapper .student_testimonials .students .card_student {
+    width: 372px;
   }
 
   main
@@ -861,6 +874,7 @@ footer .column-right .links a:last-child:hover::after {
     .content_student
     p {
     font-size: 14px;
+    width: 304px;
   }
 
   main
