@@ -867,17 +867,21 @@ footer .column-right .links a:last-child:hover::after {
     margin-left: 20px;
   }
 
+  main .wrapper .student_testimonials {
+    align-items: center;
+  }
+
   main .wrapper .student_testimonials .students {
     flex-direction: column;
   }
 
   main .wrapper .student_testimonials h2 {
     font-size: 1.25rem;
-    width: 280px;
+    margin-left: -8px;
   }
 
   main .wrapper .student_testimonials p {
-    width: 368px;
+    width: 342px;
   }
 
   main .wrapper .student_testimonials .students .card_student {
