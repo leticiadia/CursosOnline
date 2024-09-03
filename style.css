@@ -700,7 +700,7 @@ footer .column-right .links a:last-child:hover::after {
 
 @media screen and (max-width: 800px) {
   header {
-    gap: 80px;
+    gap: 108px;
     align-items: center;
   }
 
@@ -751,8 +751,8 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .wrapper .main-section .column-left p {
-    font-size: 1.25rem;
-    width: 260px;
+    font-size: 1.5rem;
+    width: 300px;
   }
 
   main .wrapper .main-section,
@@ -778,16 +778,21 @@ footer .column-right .links a:last-child:hover::after {
     height: 48px;
     justify-content: center;
 
-    font-size: 14px;
+    font-size: 16px;
+  }
+
+  main .wrapper .blog .view_all_articles a {
+    width: 304px;
+    justify-content: center;
   }
 
   main .wrapper .main-section .column-right img {
-    height: 220px;
+    height: 278px;
   }
 
   main .wrapper .courses .column-left .content_course p:first-child {
-    font-size: 1.25rem;
-    width: 240px;
+    font-size: 1.5rem;
+    width: 300px;
   }
 
   main .wrapper .courses .column-left .content_course p {
@@ -796,7 +801,7 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .wrapper .courses .column-right img {
-    height: 200px;
+    height: 246px;
   }
 
   main .teachers {
@@ -810,13 +815,12 @@ footer .column-right .links a:last-child:hover::after {
     margin-top: 1.25rem;
   }
 
-  main .teachers .column-left h2,
-  main .wrapper .student_testimonials h2 {
+  main .teachers .column-left h2 {
     font-size: 1.25rem;
   }
 
   main .teachers .column-left .content_teachers p {
-    width: 240px;
+    width: 300px;
   }
 
   main .teachers .column-right {
@@ -825,7 +829,7 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .teachers .column-right img {
-    height: 300px;
+    height: 400px;
   }
 
   main .wrapper .blog {
@@ -833,15 +837,16 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .wrapper .blog p {
-    width: 260px;
-  }
-
-  main .wrapper .student_testimonials {
-    align-items: center;
+    width: 304px;
   }
 
   main .wrapper .student_testimonials .students {
     flex-direction: column;
+  }
+
+  main .wrapper .student_testimonials h2 {
+    font-size: 1.25rem;
+    width: 200px;
   }
 
   main .wrapper .student_testimonials p {
@@ -866,7 +871,7 @@ footer .column-right .links a:last-child:hover::after {
     .info_student
     .sub_info_student
     p {
-    width: 20px;
+    width: 150px;
   }
 
   footer {
@@ -878,11 +883,12 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   footer .column-left {
-    margin-left: -20px;
+    margin-left: -68px;
   }
 
   footer .column-left img {
     margin-bottom: 16px;
+    height: 24px;
   }
 
   footer .column-right {
