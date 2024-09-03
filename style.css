@@ -876,8 +876,9 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .wrapper .student_testimonials h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-left: -8px;
+    width: 330px;
   }
 
   main .wrapper .student_testimonials p {
@@ -885,7 +886,7 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .wrapper .student_testimonials .students .card_student {
-    width: 349px;
+    width: 358px;
   }
 
   main
@@ -919,7 +920,7 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   footer .column-left {
-    margin-right: 140px;
+    margin-right: 120px;
   }
 
   footer .column-left img {
@@ -929,6 +930,6 @@ footer .column-right .links a:last-child:hover::after {
 
   footer .column-right {
     margin-right: 0;
-    gap: 100px;
+    gap: 86px;
   }
 }
