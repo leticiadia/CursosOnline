@@ -699,6 +699,11 @@ footer .column-right .links a:last-child:hover::after {
 }
 
 @media screen and (max-width: 800px) {
+  html,
+  body,
+  main {
+    overflow-x: hidden;
+  }
   header {
     gap: 176px;
     align-items: center;
@@ -782,11 +787,6 @@ footer .column-right .links a:last-child:hover::after {
     font-size: 16px;
   }
 
-  main .wrapper .blog .view_all_articles a {
-    width: 377px;
-    justify-content: center;
-  }
-
   main .wrapper .main-section .column-right img {
     height: 278px;
   }
@@ -817,7 +817,7 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .teachers .column-left h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   main .teachers .column-left .content_teachers p {
@@ -843,10 +843,22 @@ footer .column-right .links a:last-child:hover::after {
 
   main .wrapper .blog .articles .card_article .header img {
     height: 237px;
+    margin: 0 auto;
+  }
+
+  main .wrapper .blog .articles .card_article .content_article h3,
+  main .wrapper .blog .articles .card_article .header span,
+  main .wrapper .blog .articles .card_article .content_article p {
+    margin-left: 20px;
   }
 
   main .wrapper .blog .articles .card_article .content_article p {
-    width: 346px;
+    width: 320px;
+  }
+
+  main .wrapper .blog .view_all_articles a {
+    width: 377px;
+    justify-content: center;
   }
 
   main .wrapper .student_testimonials .students {
@@ -907,6 +919,6 @@ footer .column-right .links a:last-child:hover::after {
 
   footer .column-right {
     margin-right: 0;
-    gap: 90px;
+    gap: 100px;
   }
 }
