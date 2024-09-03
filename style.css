@@ -699,11 +699,6 @@ footer .column-right .links a:last-child:hover::after {
 }
 
 @media screen and (max-width: 800px) {
-  html,
-  body,
-  main {
-    overflow-x: hidden;
-  }
   header {
     gap: 176px;
     align-items: center;
