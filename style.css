@@ -821,7 +821,7 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .teachers .column-left .content_teachers p {
-    width: 368px;
+    width: 354px;
   }
 
   main .teachers .column-right {
@@ -839,10 +839,15 @@ footer .column-right .links a:last-child:hover::after {
 
   main .wrapper .blog p {
     width: 368px;
+    margin-left: 20px;
+  }
+
+  main .wrapper .blog h2 {
+    margin-left: 20px;
   }
 
   main .wrapper .blog .articles .card_article .header img {
-    height: 237px;
+    height: 254px;
     margin: 0 auto;
   }
 
@@ -857,8 +862,9 @@ footer .column-right .links a:last-child:hover::after {
   }
 
   main .wrapper .blog .view_all_articles a {
-    width: 377px;
+    width: 358px;
     justify-content: center;
+    margin-left: 20px;
   }
 
   main .wrapper .student_testimonials .students {
